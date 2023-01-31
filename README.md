@@ -83,7 +83,7 @@ Default `false`
    $remoteTypograf->p(true);
 ```
 
-### Number of tags </br> in a row
+### Number of tags `</br>` in a row
 
 ```php
    $remoteTypograf->nobr(3);

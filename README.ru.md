@@ -83,7 +83,7 @@
    $remoteTypograf->p(true);
 ```
 
-### Количество тегов </br> подряд
+### Количество тегов `</br>` подряд
 
 ```php
    $remoteTypograf->nobr(3);
