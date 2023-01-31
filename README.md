@@ -1,152 +1,154 @@
 
-# Типограф
+# Typographer
 
-В жизни каждого порядочного веб-мастера наступает момент, когда он всерьез задумывается над экранной типографикой.
+![Типограф](https://img.artlebedev.ru/typograf/before-after.gif)
 
-С одной стороны, ему хочется, чтобы сверстанный текст хорошо смотрелся в окне браузера. А для этого нужно вместо знаков дюйма поставить нормальные кавычки («елочки» и „лапки“), поубивать лишние пробелы, в нужных местах поменять дефисы на тире, неразрывным пробелом «привязать» все короткие союзы и предлоги к следующим за ними словам и произвести кучу других операций. С другой стороны, очень не хочется расставлять все эти значки, кавычки и неразрывные пробелы вручную.
+There comes a time in the life of every decent webmaster when he seriously thinks about screen typography.
 
-Студия Лебедева первой в интернете заявила о важности применения экранной типографики при верстке материалов. С 2000 года тексты всех создаваемых Студией Лебедева сайтов приводятся в порядок при помощи программы «Типограф». С 2002 года программа бесплатно доступна на нашем сайте.
+On the one hand, he wants the typed text to look good in the browser window. And to do this, instead of signs of the inch to put a normal quote ("herringbone" and "feet"), to kill the extra space, in the right places to change the hyphens into hyphens, unbroken space "tied" all the short conjunctions and prepositions to follow them to words and make a bunch of other operations. On the other hand, do not really want to put all these icons, quotation marks and non-breaking spaces by hand.
 
-Подробнее о принципах экранной типографики можно прочитать в [§ 62](https://www.artlebedev.ru/kovodstvo/sections/62/) «Ководства».
+Lebedev Studio was the first on the Internet to declare the importance of using on-screen typography in the layout of materials. Since 2000, the texts of all websites created by Lebedev Studio are put in order with the help of "Typographer". Since 2002 the program has been available on our site for free.
 
-Вам хочется чего-то особенного от «Типографа»? [Напишите нам](mailto:tema@tema.ru?subject=typograf_wish_list).
+You can read more about the principles of screen typography in [§ 62](https://www.artlebedev.ru/kovodstvo/sections/62/) "Guidelines".
 
-## Установка
+Do you want something special from Typographer? [Email us](mailto:tema@tema.ru?subject=typograf_wish_list).
 
-Установка при помощи
+## Installation
+
+Installation by using
 
 ```sh
-        composer require impeck/artlebedev-typograf
+   composer require impeck/artlebedev-typograf
 ```
 
-## Использование и настройка
+## Usage and customization
 
-Пример использования представлен в файле example.php
+A sample use case is given in [example.php](https://github.com/Impeck/artlebedev-typograf/blob/main/example.php)
 
 ```php
-        <?php
+   <?php
 
-        require 'vendor/autoload.php';
+   require 'vendor/autoload.php';
 
-        use ArtLebedevStudio\RemoteTypograf;
+   use ArtLebedevStudio\RemoteTypograf;
 
-        $remoteTypograf = new RemoteTypograf();
+   $remoteTypograf = new RemoteTypograf();
 ```
 
-### Выдавать символы
+### Output characters
 
-#### Готовые символы — «а»
+#### Ready characters — «а»
 
-По умолчанию. Символы выдаются в том виде, в каком их видит в результате читатель.
+Default. The characters are output as the reader sees them as a result.
 
 ```php
-        $remoteTypograf->noEntities();
+   $remoteTypograf->noEntities();
 ```
 
-#### Буквенными кодами `&laquo;а&raquo;`
+#### Alphabetic codes — `&laquo;a&raquo;`
 
-Хорошо для XML, плохо для старых браузеров.
+Good for XML, bad for old browsers.
 
 ```php
-        $remoteTypograf->htmlEntities();
+   $remoteTypograf->htmlEntities();
 ```
 
-#### Числовыми кодами - `&171;а&187;`
+#### Numeric codes — `&171;a&187;`
 
-Кому-то нужно. Плохо для старых браузеров.
+Somebody needs. Bad for older browsers.
 
 ```php
-        $remoteTypograf->xmlEntities();
+   $remoteTypograf->xmlEntities();
 ```
 
-#### Буквенными и числовыми кодами - `&laquo;а&raquo;` и `&171;а&187;`
+#### Alphabetic and numeric codes — `&laquo;a&raquo;` and `171;a&187;`
 
 ```php
-        $remoteTypograf->mixedEntities();
+   $remoteTypograf->mixedEntities();
 ```
 
-### Ставить переносы строк
+### Put line breaks
 
-По умолчанию `false`
+Default `false`
 
 ```php
-        $remoteTypograf->br(true);
+   $remoteTypograf->br(true);
 ```
 
-### Размечать параграфы
+### Paragraph marking
 
-По умолчанию `false`
+Default `false`
 
 ```php
-        $remoteTypograf->p(true);
+   $remoteTypograf->p(true);
 ```
 
-### Количество тегов </br> подряд
+### Number of tags </br> in a row
 
 ```php
-        $remoteTypograf->nobr(3);
+   $remoteTypograf->nobr(3);
 ```
 
-### Кавычки первого уровня
+### First level quotation marks
 
-По умолчанию « »  — французские (ёлочки)
+Default « » — French
 
 ```php
-        $remoteTypograf->quotA('laquo raquo');
+   $remoteTypograf->quotA('laquo raquo');
 ```
 
-### Кавычки второго уровня
+### Second level quotation marks
 
-По умолчанию „ “ — немецкие (лапки)
+Default „ “ — German
 
 ```php
-        $remoteTypograf->quotB('bdquo ldquo'); 
+   $remoteTypograf->quotB('bdquo ldquo'); 
 ```
 
-#### Возможные варианты кавычек
+#### Possible quote options
 
-`laquo raquo` — французские (ёлочки) « »
+`laquo raquo` — French « »
 
-`bdquo ldquo` — немецкие (лапки) „ “
+`bdquo ldquo` — German „ “
 
-`quot quot` — программистские " "
+`quot quot` — Programmers " "
 
-`lsquo rsquo` — английские одиночные ‘ ’
+`lsquo rsquo` — English singles  ‘ ’
 
-`ldquo rdquo` — английские двойные “ ”
+`ldquo rdquo` — English double “ ”
 
-`sbquo lsquo` —  ‚ ‘
+`sbquo lsquo` - ' '
 
-## Авторы «Типографа»
+## The authors of "Typograph."
 
-### Артемий Лебедев
+### Artemy Lebedev
 
-всю жизнь мечтал использовать длинные тире на вебе. После нескольких лет мечтаний написал [§ 62](https://www.artlebedev.ru/kovodstvo/sections/62/) и заставил всех делать лишнюю работу. Вместе с Александром Петросяном написал версию «Типографа» на AppleScript.
+all his life dreamed of using long dashes on the web. After several years of dreaming, he wrote [§ 62](https://www.artlebedev.ru/kovodstvo/sections/62/) and made everyone do the extra work. Together with Alexander Petrosyan, he wrote an AppleScript version of Typograph.
 
-### Алексей Смычагин
+### Alexey Smychagin
 
-написал свою программу, собрав все пожелания; прикрутил «Типограф» к вебу
+wrote his own program; he collected all the wishes and added the "Typograph" to the web
 
-### Денис Авраамов
+### Denis Avrahamov
 
-первый в студии поленился расставлять типографику руками и написал автоматический скрипт
+was the first guy in the studio who was too lazy to do all the typography by hand and wrote an automatic script
 
-### Константин Жилин
+### Konstantin Zhilin
 
-помогал Авраамову
+helped Avrahamov
 
-### Константин Томашевич
+### Konstantin Tomashevich
 
-написал свою программу, которая расставляла типографику в системе администрирования театральных сайтов
+wrote his own program that put the typography into the theatrical web administration system
 
-### Андрей Шитов
+### Andrei Shitov
 
-написал [XML-веб-сервис](https://www.artlebedev.ru/typograf/webservice/) и примеры его использования на нескольких языках
+wrote [XML web-service](https://www.artlebedev.ru/typograf/webservice/) and examples of its use in several languages
 
-### Владимир Токмаков
+### Vladimir Tokmakov
 
-собрал большую порцию пожеланий и переписал «Типограф» заново
+collected a lot of suggestions and rewrote "Typograph" from scratch
 
-### Сергей Москалев
+### Sergei Moskalev
 
-прислал коллекцию правил обработки текста после сканирования
+sent a collection of text processing rules after scanning
