@@ -1,7 +1,13 @@
 
 # Typographer
 
-![Типограф](https://img.artlebedev.ru/typograf/before-after.gif)
+<p align="center"> 
+ <a href="https://www.artlebedev.ru/typograf/"><img src="https://img.artlebedev.ru/typograf/before-after.gif" alt="Typographer" height="200"></a>
+</p>
+
+<p align="center">
+<a href="https://packagist.org/packages/impeck/artlebedev-typograf"><img alt="Packagist" src="https://img.shields.io/packagist/dt/impeck/artlebedev-typograf.svg"></a>
+</p>
 
 There comes a time in the life of every decent webmaster when he seriously thinks about screen typography.
 
@@ -12,6 +18,12 @@ Lebedev Studio was the first on the Internet to declare the importance of using 
 You can read more about the principles of screen typography in [§ 62](https://www.artlebedev.ru/kovodstvo/sections/62/) "Guidelines".
 
 Do you want something special from Typographer? [Email us](mailto:tema@tema.ru?subject=typograf_wish_list).
+
+Typograf homepage: http://typograf.artlebedev.ru/
+
+Web-service address: http://typograf.artlebedev.ru/webservices/typograf.asmx
+
+WSDL-description: http://typograf.artlebedev.ru/webservices/typograf.asmx?WSDL
 
 ## Installation
 
@@ -117,9 +129,9 @@ Default „ “ — German
 
 `ldquo rdquo` — English double “ ”
 
-`sbquo lsquo` - ' '
+`sbquo lsquo` — ' '
 
-## The authors of "Typograph."
+## The authors of "Typograph"
 
 ### Artemy Lebedev
 

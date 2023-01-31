@@ -1,7 +1,13 @@
 
 # Типограф
 
-![Типограф](https://img.artlebedev.ru/typograf/before-after.gif)
+<p align="center"> 
+ <a href="https://www.artlebedev.ru/typograf/"><img src="https://img.artlebedev.ru/typograf/before-after.gif" alt="Typographer" height="200"></a>
+</p>
+
+<p align="center">
+<a href="https://packagist.org/packages/impeck/artlebedev-typograf"><img alt="Packagist" src="https://img.shields.io/packagist/dt/impeck/artlebedev-typograf.svg"></a>
+</p>
 
 В жизни каждого порядочного веб-мастера наступает момент, когда он всерьез задумывается над экранной типографикой.
 
@@ -12,6 +18,12 @@
 Подробнее о принципах экранной типографики можно прочитать в [§ 62](https://www.artlebedev.ru/kovodstvo/sections/62/) «Ководства».
 
 Вам хочется чего-то особенного от «Типографа»? [Напишите нам](mailto:tema@tema.ru?subject=typograf_wish_list).
+
+Типограф: http://typograf.artlebedev.ru/
+
+Web-сервис: http://typograf.artlebedev.ru/webservices/typograf.asmx
+
+WSDL-описание: http://typograf.artlebedev.ru/webservices/typograf.asmx?WSDL
 
 ## Установка
 
@@ -117,7 +129,7 @@
 
 `ldquo rdquo` — английские двойные “ ”
 
-`sbquo lsquo` —  ‚ ‘
+`sbquo lsquo` — ‚ ‘
 
 ## Авторы «Типографа»
 
