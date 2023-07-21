@@ -9,7 +9,7 @@
 <a href="https://packagist.org/packages/impeck/artlebedev-typograf"><img alt="Packagist" src="https://img.shields.io/packagist/dt/impeck/artlebedev-typograf.svg"></a>
 </p>
 
-\[ [English](https://github.com/Impeck/artlebedev-typograf/blob/main/README.md) | Русский \]
+[English](https://github.com/Impeck/artlebedev-typograf/blob/main/README.md) | Русский
 
 В жизни каждого порядочного веб-мастера наступает момент, когда он всерьез задумывается над экранной типографикой.
 
