@@ -10,11 +10,17 @@
     },
     "authors": [
         {
-            "name": "Andrew Shitov (ash@design.ru), Ilya Rozhkov (impeck@ya.ru)"
+            "name": "Andrew Shitov",
+            "email": "ash@design.ru"
+        },
+        {
+            "name": "Ilya Rozhkov",
+            "email": "impeck@ya.ru"
         }
     ],
     "minimum-stability": "stable",
-	"require": {
-        "php": ">=7.4"
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-soap": "*"
     }
 }

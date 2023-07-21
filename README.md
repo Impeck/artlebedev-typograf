@@ -8,6 +8,7 @@
 <p align="center">
 <a href="https://packagist.org/packages/impeck/artlebedev-typograf"><img alt="Packagist" src="https://img.shields.io/packagist/dt/impeck/artlebedev-typograf.svg"></a>
 </p>
+\[ English | [Русский](https://github.com/Impeck/artlebedev-typograf/blob/main/README.ru.md) \]
 
 There comes a time in the life of every decent webmaster when he seriously thinks about screen typography.
 
@@ -73,7 +74,7 @@ Somebody needs. Bad for older browsers.
    $remoteTypograf->xmlEntities();
 ```
 
-#### Alphabetic and numeric codes — `&laquo;a&raquo;` and `171;a&187;`
+#### Alphabetic and numeric codes — `&laquo;a&raquo;` and `&171;a&187;`
 
 ```php
    $remoteTypograf->mixedEntities();
